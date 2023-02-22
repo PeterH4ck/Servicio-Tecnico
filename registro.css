@@ -1,0 +1,75 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, rgb(181, 233, 247) 0%, rgba(232, 235, 234, 0.897) 47%, rgb(158, 229, 243) 98%);
+    /* Centrar contenido vertical y horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilos generales para el formulario */
+  form {
+    width: 50%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(189, 17, 17, 0.2);
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="datetime-local"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el botón de enviar */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el mensaje de error */
+  #error-message {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el mensaje de éxito */
+  #success-message {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #008000;
+    font-weight: bold;
+    margin-top: 20px;
+  }
