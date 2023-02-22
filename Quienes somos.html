@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>¿Quiénes somos?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="links-container">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-links-container">
+        <button class="login-button" onclick="login()">LogIn</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Tu solución en reparación de Notebooks y Celulares</h1>
+          <p>Servicio técnico rápido y de calidad.</p>
+          <nav>
+            <ul>
+              <li style="float: left;">
+                <a href="#">
+                  <img src="D:\Creacion de pagina web\Imagenes\Notebook.png" alt="Notebook">
+                </a>
+              </li>
+              <li style="float: right;">
+                <a href="#">
+                  <img src="D:\Creacion de pagina web\Imagenes\Phone.png" alt="Celular">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="info" id="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa especializada en el servicio técnico de notebooks y celulares. Contamos con un equipo de profesionales altamente capacitados para solucionar cualquier problema que tenga su dispositivo electrónico.</p>
+        <p>Ofrecemos reparaciones rápidas y de calidad, garantizando siempre la satisfacción de nuestros clientes. Además, contamos con precios competitivos y ofrecemos presupuestos personalizados sin compromiso.</p>
+      </section>
+
+      <section class="info" id="contacto">
+        <h2>Contacto</h2>
+        <form action="contacto.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Servicio técnico de Notebooks y Celulares</p>
+    </footer>
+
+    <script>
+      function login() {
+        location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>
