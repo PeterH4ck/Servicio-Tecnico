@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BIENVENIDO!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="error-message">
+      <div class="login-container">
+        <form>
+          <h2>BIENVENIDO!</h2>
+          <label for="username">Nombre de Usuario</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Iniciar sesión</button>
+          <a href="registro.html" id="register-button" class="btn-101">Nuevo Usuario
+            <svg>
+              <defs>
+                <filter id="glow">
+                  <feGaussianBlur result="coloredBlur" stddeviation="5"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+              </defs>
+              <rect></rect>
+            </svg>
+          </a>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
