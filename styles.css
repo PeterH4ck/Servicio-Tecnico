@@ -1,0 +1,134 @@
+/* Estilo para el cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, rgb(181, 233, 247) 0%, rgba(232, 235, 234, 0.897) 47%, rgb(158, 229, 243) 98%);
+  /* Centrar contenido vertical y horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para el contenedor de mensaje de error */
+
+/* Estilo para el contenedor de inicio de sesión */
+.login-container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #949494;
+  padding: 20px;
+  width: 90%; /* ajustar el ancho según el dispositivo */
+  max-width: 400px;
+  text-align: center; /* Centrar contenido horizontalmente */
+}
+
+/* Estilo para el título del formulario */
+h2 {
+  color: #333333;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Estilo para los campos del formulario */
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 95%;
+}
+
+/* Estilo para el botón de inicio de sesión */
+button[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  transition: filter 0.2s;
+}
+
+/* Estilo para el botón de registro */
+#register-button {
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Estilo para el efecto de brillo en el botón de registro */
+#register-button svg {
+  fill: #333333;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#register-button:hover svg {
+  filter: url(#glow);
+}
+
+/* Añadir transición y efecto de brillo a los botones */
+button[type="submit"], #register-button {
+  transition: filter 0.2s;
+}
+
+button[type="submit"]:hover, #register-button:hover {
+  filter: brightness(120%);
+}
+
+/* Estilo para los mensajes de error en los campos de formulario */
+input:invalid {
+  border-color: #f44336;
+}
+
+input:invalid:focus {
+  box-shadow: none;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 480px) {
+  .login-container {
+    width: 100%; /* Ajustar el ancho al 100% */
+    max-width: none; /* Eliminar el ancho máximo */
+    margin: 0 10px; /* Alinear a los lados */
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%; /* Ajustar el ancho al 100% */
+  }
+  #register-button {
+    width: 100%; /* Ajustar el ancho al 100% */
+    margin-bottom: 20px; /* Añadir un margen inferior */
+  }
+
+  /* Estilo para el contenedor de inicio de sesión */
+.login-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #dcdcdc;
+  padding: 20px;
+  width: 90%; /* ajustar el ancho según el dispositivo */
+  max-width: 400px;
+  text-align: center; /* Centrar contenido horizontalmente */
+}
